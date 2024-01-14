@@ -58,6 +58,52 @@ s<!DOCTYPE html>
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
         }
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+    }
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #555;
+}
+
+.home, .about, .destinations, .contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
         </style>
  
 </head>
@@ -86,13 +132,13 @@ s<!DOCTYPE html>
         </div>
      </div>
     <h5>ENTCdepartment HOD</h5>
-     <img src="./assets/entc.jpeg" alt="entc">
+     <img src="./assets/entc.jpeg" alt="entc" height="100">
      <br>
     </br>
  <section id="HOD">
     <div class="section__pic-container">
         <div class="animated-image"></div>
-           <img src="./assets/teacher1.jpeg" alt="Profile picture" /> <!-- Replace with your profile picture -->
+           <img src="./assets/teacher1.jpeg" alt="Profile picture" height="100"> <!-- Replace with your profile picture -->
         </div>
     </div>
       <div class="section__text">
@@ -108,6 +154,42 @@ s<!DOCTYPE html>
           </button>
         </div>
  </section>
+
+    
+
+
+
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Content -->
+    <section class="home">
+        <h1>Welcome to Our Tourism Website</h1>
+        <p>Explore amazing destinations and plan your next adventure with us!</p>
+    </section>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Discover the story behind our tourism services and how we make your travel memorable.</p>
+    </section>
+    <section class="destinations">
+        <h2>Explore Our Featured Destinations</h2>
+        <p>Plan your dream vacation to these incredible locations around the world.</p>
+        <!-- Add more content and images for each destination -->
+    </section>
+    <section class="contacts">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to us, and we'll be happy to help!</p>
+    </section>
+
 </body>
 </html>
+
 
