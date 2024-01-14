@@ -1,18 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FACULTY SECTION</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
 
+        header {
+            background-color: #9cd5e6;
+            color: #0d0c0c;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #0d0c0c;
+        }
+
+        p {
+            color: #0d0c0c;
+        }
+       
+        
+
         nav {
-            background-color: #333;
+            background-color:#878b8a;
             padding: 10px;
         }
 
@@ -36,106 +69,63 @@
         }
 
         a:hover {
-            background-color:#ff0000;
+            background-color:#0e0c0d;
         }
-        .slider {
-             width: 200px;
-             height: 200px;
-             background-color: red;
-             position: relative;
-             animation: slide 2s finite;
-        }
+         /* CSS styles for the container */
+        .image-container {
+         max-width: 500px; /* Set the maximum width for the container */
+         margin: 0 auto;   /* Center the container horizontally */
+         border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+         overflow: hidden; /* Optional: Hide overflowing content */
+          }
 
-           @keyframes slide {
-          0% { left: 0; }
-          50% { left: 200px; }
-           100% { left: 0; }
-         }      
-        
-         </style>
+          /* CSS styles for the image */
+         .image-container img {
+         width: 100%; /* Make the image fill the container width */
+         height: auto; /* Maintain aspect ratio */
+         display: block; /* Remove default inline spacing */
+         float:right;
+          }
+    
+    </style>
+    <title>FACULTY SECTION</title>
 </head>
 <body>
-   <DIV>   
-    <h>FACULTY SECTION</h>    
-   </DIV>
+    <header>
+        <h3>!!FACULTY SECTION!!</h3>
+    </header>
+    <div>
     <nav>
         <ul>
             <li><a href="#HOD">HOD</a></li>
-            </br>
+            <br>
             <li><a href="#TPC">TPC</a></li>
-            </br>
+            <br>
             <li><a href="#Contact">Contact</a></li>
-            </br>
+            <br>
         </ul>
     </nav>
-   <div class="container">
-    <h5>This section will enable you to know more about the staff members of ENTC department and to explore  more about their experience and teahcing</h5>
-   </div>
-     <br>
-     </br>
-     </br>
-     
- <section id="HOD">
-    <div class="section__pic-container">
-        <div class="slider"></div>
-           <img src="./assets/teacher1.jpeg" alt="Profile picture" height="100"> <!-- Replace with your profile picture -->
-        </div>
-    </div>
-      <div class="section__text">
-        <p class="section_text_p1">HOD OF ENTC DEPARTMENT</p>
-        <h1 class="title">PROF. SWAPNIL LAUDKAR</h1> <!-- Edit your name here -->
-        <br>
-        <p>QUALIFICATION: XYZ.
-        </p>
-        <p class="section_text_p2">Currently looking after all the affairs of te department of entc. </p> <!-- Edit your profession/title here -->
-        <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#HOD'">
-            MORE
-          </button>
-        </div>
+</div>
+    <section>
+        <h2>ENTC DEPARTMENT FACULTY INFORMATION</h2>
+        <img src="./assets/entc.jpeg" alt="JSPM ICOER">
+        <p>This section will enable you to know more about the staff members of ENTC department and to explore  more about their experience and teahcing</p>
  </section>
-<br>
-<br>
-<section id="TPC">
-    <div class="section__pic-container">
-        <div class="slider"></div>
-           <img src="./assets/teacher2.jpeg" alt="Profile picture" height="150"> <!-- Replace with your profile picture -->
+
+
+  <section id="HOD">
+    <div class="image-container">
+        <img src="./assets/teacer1.jpeg" alt="photo">
     </div>
-    
+          
     <div class="section__text">
-        <p class="section_text_p1">TPC</p>
-        <h3 class="title">PROF. SIVAM AGRAWAL</h3> <!-- Edit your name here -->
+        <h3 class="section_text_p1">HOD OF ENTC DEPARTMENT</h3>
+        <h4 class="title">PROF. SWAPNIL LAUDKAR</h4> <!-- Edit your name here -->
+        <p>QUALIFICATION: XYZ </p>
         <br>
-        <p>QUALIFICATION: XYZ.
-        </p>
         <p class="section_text_p2">Currently looking after all the affairs of te department of entc. </p> <!-- Edit your profession/title here -->
-      </div>
-</section>
-<br>
-<br>
-<section id="Contact">
  
-  <h1>Contact Us</h1>
-
-<form action="/submit_form" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-<br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-<br>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-<br>
-    <input type="submit" value="Submit">
-<br>
-</form>
-</section>
-
-<footer>
-    <p>&copy; 2024 JSPM ENTC DEPARTMENT. All rights reserved.</p>
-</footer>
+    </div>
+ </section>
 </body>
 </html>
-
-
