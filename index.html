@@ -38,6 +38,21 @@
         a:hover {
             background-color:#ff0000;
         }
+         @keyframes scaleAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        img {
+            animation: scaleAnimation 3s infinite;
+        }
+         .rounded-container {
+            width: 300px; /* Adjust the width as needed */
+            padding: 20px; /* Adjust the padding as needed */
+            border-radius: 10px; /* Adjust the border-radius for rounded corners */
+            background-color: #f0f0f0; /* Adjust the background color as needed */
+        }
          </style>
 </head>
 <body>
@@ -54,14 +69,13 @@
             </br>
         </ul>
     </nav>
-   
-    <h5>ENTCdepartment HOD</h5>
+   <div class="rounded-container">
+    <h5>This section will enable you to know more about the staff members of ENTC department and to explore  more about their experience and teahcing</h5>
+   </div>
      <br>
      </br>
      </br>
-     </br>
-     </br>
-     </br>
+     
  <section id="HOD">
     <div class="section__pic-container">
         <div class="animated-image"></div>
