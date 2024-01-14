@@ -38,16 +38,29 @@
         a:hover {
             background-color:#ff0000;
         }
-         @keyframes scaleAnimation {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
+        .slide-in-photo {
+            width: 300px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            overflow: hidden;
+            position: relative;
         }
 
-        img {
-            animation: scaleAnimation 3s infinite;
+        .slide-in-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: slideIn 2s ease-in-out; /* Adjust the animation duration and easing as needed */
         }
-         .rounded-container {
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+         .container {
             width: 300px; /* Adjust the width as needed */
             padding: 20px; /* Adjust the padding as needed */
             border-radius: 10px; /* Adjust the border-radius for rounded corners */
@@ -69,7 +82,7 @@
             </br>
         </ul>
     </nav>
-   <div class="rounded-container">
+   <div class="container">
     <h5>This section will enable you to know more about the staff members of ENTC department and to explore  more about their experience and teahcing</h5>
    </div>
      <br>
@@ -78,7 +91,7 @@
      
  <section id="HOD">
     <div class="section__pic-container">
-        <div class="animated-image"></div>
+        <div class="slide-in-photo"></div>
            <img src="./assets/teacher1.jpeg" alt="Profile picture" height="100"> <!-- Replace with your profile picture -->
         </div>
     </div>
@@ -99,7 +112,8 @@
 <br>
 <section id="TPC">
     <div class="section__pic-container">
-           <img src="./assets/teacher2.jpeg" alt="Profile picture" height="100"> <!-- Replace with your profile picture -->
+        <div class="slide-in-photo"></div>
+           <img src="./assets/teacher2.jpeg" alt="Profile picture" height="150"> <!-- Replace with your profile picture -->
     </div>
     
     <div class="section__text">
