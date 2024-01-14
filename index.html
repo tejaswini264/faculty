@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><i>FACULTY SECTION</i></title>
-    < <style>
+    <style>
         body {
             margin: 0;
             padding: 0;
@@ -38,8 +38,35 @@
         a:hover {
             background-color: #555;
         }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Animation definition */
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Style for the animated image */
+        .animated-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #3498db;
+            animation: rotate 2s linear infinite; /* Apply the 'rotate' animation */
+        }
     </style>
 </head>
+
 <body>
 
     <!-- website content goes here -->
@@ -65,10 +92,14 @@
      </div>
     <h5>ENTCdepartment HOD</h5>
      <img src="./entc.jpeg" alt="entc">
+     <br>
+    </br>
  <section id="HOD">
     <div class="section__pic-container">
-        <img src="./assets/teacher1.jpeg" alt="Profile picture" /> <!-- Replace with your profile picture -->
-      </div>
+        <div class="animated-image"></div>
+           <img src="./assets/teacher1.jpeg" alt="Profile picture" /> <!-- Replace with your profile picture -->
+        </div>
+    </div>
       <div class="section__text">
         <p class="section_text_p1">HOD OF ENTC DEPARTMENT</p>
         <h1 class="title">PROF. SWAPNIL LAUDKAR</h1> <!-- Edit your name here -->
@@ -77,8 +108,8 @@
         </p>
         <p class="section_text_p2">Currently looking after all the affairs of te department of entc. </p> <!-- Edit your profession/title here -->
         <div class="btn-container">
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-1" onclick="location.href='./#HOD'">
+            MORE
           </button>
         </div>
  </section>
