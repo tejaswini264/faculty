@@ -4,63 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><i>FACULTY SECTION</i></title>
-    <style>
+    < <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
 
-        /* Style for the menu button */
-        .menu-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
+        nav {
             background-color: #333;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Style for the menu options container */
-        .menu-options {
-            display: none;
-            position: fixed;
-            top: 50px;
-            right: 20px;
-            background-color: #333;
-            color: white;
             padding: 10px;
-            border: 1px solid #555;
         }
 
-        /* Style for the menu options items */
-        .menu-option {
-            padding: 5px;
-            cursor: pointer;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
         }
 
-        /* Change background color on hover */
-        .menu-button:hover {
+        li {
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
             background-color: #555;
         }
     </style>
 </head>
 <body>
 
-    <!-- Your website content goes here -->
-
-    <!-- Menu button -->
-    <button class="menu-button" onclick="toggleMenu()">Menu</button>
-
-    <!-- Menu options container -->
-    <div class="menu-options" id="menuOptions">
-        <div class="menu-option" onclick="handleOptionClick('2nd year')">2nd year</div>
-        <div class="menu-option" onclick="handleOptionClick('3rd year')">3rd year</div>
-        <div class="menu-option" onclick="handleOptionClick('4ty year')">4ty year</div>
-    </div>
-
+    <!-- website content goes here -->
+    <h2 class="title"><i>FACULTY SECTION</i></h2>
+    <nav>    
+        <ul>
+            <li><a href="#HOD">HOD</a></li>
+            <li><a href="#SY">SY STAFF</a></li>
+            <li><a href="#TY">TY STAFF</a></li>
+            <li><a href="#BE">BE STAFF</a></li>
+        </ul>
+    </nav>
+    <div class="menu-links">
+        <div class="section__text-container">
+         <p><li><a href="#HOD" onclick="toggleMenu()">HOD</a></li>
+          </p> 
+        <p><li><a href="#SY" onclick="toggleMenu()">SY STAFF</a></li>
+          </p>
+         <p><li><a href="#TY" onclick="toggleMenu()">TY STAFF</a></li>
+         </p>
+         <p><li><a href="#BE" onclick="toggleMenu()">BE STAFF</a></li></p>
+        </div>
+     </div>
+    <h5>ENTCdepartment HOD</h5>
+     <img src="./entc.jpeg" alt="entc">
+ <section id="HOD">
+    <div class="section__pic-container">
+        <img src="./assets/teacher.png" alt="Profile picture" /> <!-- Replace with your profile picture -->
+      </div>
+      <div class="section__text">
+        <p class="section_text_p1">HOD OF ENTC DEPARTMENT</p>
+        <h1 class="title">PROF. SWAPNIL LAUDKAR</h1> <!-- Edit your name here -->
+        <br>
+        <p>QUALIFICATION: XYZ.
+        </p>
+        <p class="section_text_p2">Currently looking after all the affairs of te department of entc. </p> <!-- Edit your profession/title here -->
+        <div class="btn-container">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+ </section>
 </body>
 </html>
 
