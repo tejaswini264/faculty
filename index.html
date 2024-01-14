@@ -1,15 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title><i>....FACULTY SECTION....</i></title>
-     <style>
-        body {
-            background-image:<img src="\entc.jpeg" alt="entc image"> /* Replace with the actual path to your image */
-        }
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i>FACULTY SECTION</i></title>
+    <style>
         body {
             margin: 0;
             padding: 0;
@@ -26,8 +21,29 @@
             padding: 10px 15px;
             border: none;
             cursor: pointer;
-            transition: background-color 0.3s ease; /* Add a smooth transition */
         }
+
+        /* Style for the menu options container */
+        .menu-options {
+            display: none;
+            position: fixed;
+            top: 50px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: 1px solid #555;
+        }
+
+        /* Style for the menu options items */
+        .menu-option {
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        /* Change background color on hover */
+        .menu-button:hover {
+            background-color: #555;
         }
     </style>
 </head>
@@ -36,9 +52,15 @@
     <!-- Your website content goes here -->
 
     <!-- Menu button -->
-    <button class="menu-button">Menu</button>
+    <button class="menu-button" onclick="toggleMenu()">Menu</button>
+
+    <!-- Menu options container -->
+    <div class="menu-options" id="menuOptions">
+        <div class="menu-option" onclick="handleOptionClick('2nd year')">2nd year</div>
+        <div class="menu-option" onclick="handleOptionClick('3rd year')">3rd year</div>
+        <div class="menu-option" onclick="handleOptionClick('4ty year')">4ty year</div>
+    </div>
 
 </body>
-
 </html>
 
